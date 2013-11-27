@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="What we're doing.">
+    <meta name="author" content="Rik Goldman">
     <link rel="shortcut icon" href="favicon.png">
 
     <title>9while9</title>
@@ -43,10 +43,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="http://9while9.com">Home</a></li>
-            <li><a href="#about">Raspi</a></li>
-            <li><a href="#contact">VMs</a></li>
             <li><a href="http://9while9.com/project">Curriculum</a></li>
-			<li><a href="#ISOs">ISOs</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -69,9 +66,20 @@
       <div class="row">
         <div class="col-md-4">
           <h2>Ghost</h2>
-          <p>Our first foray into TKLDEV: Ghost is a revolutionary new blogging platform that relies on markdown syntax. We've successfully produced a Ghost appliance for submission to TKL.</p>
-          <p>Ghost is built to run with nodejs; using forever and Nginx, we think we've got this ready for use. The ISO produced by TKLDEV uses sqlite and runs Ghost in production mode.</p>
-          <p><a class="btn btn-default" href="http://github.com/ghoulmann/tkl-ghost" role="button">Github Repo &raquo;</a></p>
+          <p>Our first foray into <a href="http://www.turnkeylinux.org/blog/introducing-tkldev">TKLDEV</a>: <a href="tryghost.com">Ghost</a> is a revolutionary new blogging platform that relies on <a href="http://daringfireball.net/projects/markdown/">markdown syntax</a>. We've successfully produced a Ghost appliance for submission to <a href="http://turnkeylinux.org">TKL</a>.</p>
+          
+          <p>Ghost is built to run with nodejs; using forever and Nginx, we think we've got this ready for use. The ISO produced by TKLDEV uses sqlite and runs Ghost in development mode.</p>
+
+          <p>The appliance is currently configured as follows:</p>
+          	<ul>
+          		<li>Built on TurnKey Core (Wheezy 64-bit)</li>
+          		<li>Runs in development mode</li>
+          		<li>Dialogs ask for username, password, and URL on first boot</li>
+          		<li>Relies on sqlite for database</li>
+          		<li>Configured in /opt/ghost</li>
+          	</ul>
+
+          <p><a class="btn btn-default" href="http://github.com/ghoulmann/tkl-ghost" role="button">Github Repo &raquo;</a>  <a class="btn btn-default" href="http://9while9.com/isos/ghost.iso" role="button">Download ISO &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>Ampache</h2>
