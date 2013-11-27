@@ -65,8 +65,8 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Ghost</h2>
-          <p>Our first foray into <a href="http://www.turnkeylinux.org/blog/introducing-tkldev">TKLDEV</a>: <a href="tryghost.com">Ghost</a> is a revolutionary new blogging platform that relies on <a href="http://daringfireball.net/projects/markdown/">markdown syntax</a>. We've successfully produced a Ghost appliance for submission to <a href="http://turnkeylinux.org">TKL</a>.</p>
+          <h2>Ghost Appliance</h2>
+          <p>Our first foray into <a href="http://www.turnkeylinux.org/blog/introducing-tkldev">TKLDEV</a>: <a href="http://ghost.org">Ghost</a> is a revolutionary new blogging platform that relies on <a href="http://daringfireball.net/projects/markdown/">markdown syntax</a>. We've successfully produced a Ghost appliance for submission to <a href="http://turnkeylinux.org">TKL</a>.</p>
           
           <p>Ghost is built to run with nodejs; using forever and Nginx, we think we've got this ready for use. The ISO produced by TKLDEV uses sqlite and runs Ghost in development mode.</p>
 
@@ -82,9 +82,17 @@
           <p><a class="btn btn-default" href="http://github.com/ghoulmann/tkl-ghost" role="button">Github Repo &raquo;</a>  <a class="btn btn-default" href="http://9while9.com/isos/ghost.iso" role="button">Download ISO &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Ampache</h2>
-          <p>Ampache is web-based, on demand audio and video streaming software. Years ago, our first attempt to produce an appliance for submission to TKL used TKLPatch to get Ampache up and running with as little configuration. WIth the release of TKLDEV, we've ported the patch and relied on the wisdom we've accumulated over some years to make the appliance truly turn key. </p>
-          <p><a class="btn btn-default" href="http://github.com/ghoulmann/TKL-ampache" role="button">Github Repo &raquo;</a></p>
+          <h2>Ampache Appliance</h2>
+          <p><a href="http://ampache.org">Ampache</a> is web-based, on demand audio and video streaming software. Years ago, our first attempt to produce an appliance for submission to <a href="http://turnkeylinux.org">TKL</a> used TKLPatch to get Ampache up and running with as little manual configuration as was possible for us. With the release of TKLDEV, we've ported the patch and relied on the wisdom we've accumulated over some years to make the appliance truly "turn key." </p>
+
+          <p>The ISO is configured as follows:</p>
+          <ul>
+          	<li>Based on Turnkey Linux's <a href="http://turnkeylinux.org/lamp">LAMP</a> appliance (Debian Wheezy 64-bit)</li>
+          	<li>Configures Ampache "admin" user on first boot</li>
+          	<li>Relies on recommended HEAD branch on Github</li>
+          	<li>Includes ampache-themes in /usr/share</li>
+          </ul>
+          <p><a class="btn btn-default" href="http://github.com/ghoulmann/TKL-ampache" role="button">Github Repo &raquo;</a>  <a class="btn btn-default" href="http://9while9.com/isos/ampache.iso" role="button">Download ISO &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>What's Next</h2>
@@ -95,7 +103,8 @@
             <li><a href="http://dillinger.io">Dillinger</a></li>
             <li>Typo3 Neos</li>
           </ul>
-          <p>What we do is ultimately up to the students in the lab. </p>
+          <p>What we do is ultimately up to the students in the lab. That said, we're certainly open to suggestions.</p>
+          <p><a class="btn btn-default" href="https://twitter.com/9_while_9" role="button">DM Suggestions &raquo;</a></p>
         </div>
 
        </div>
@@ -130,6 +139,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
